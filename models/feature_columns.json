@@ -1,0 +1,52 @@
+{
+  "categorical_cols": [
+    "mining_method",
+    "sorting_method",
+    "concentration_method",
+    "smelting_method",
+    "energy_source",
+    "product_type"
+  ],
+  "numeric_cols": [
+    "ore_grade",
+    "transport_km",
+    "manufacturing_efficiency",
+    "recycling_rate"
+  ],
+  "target_cols": [
+    "total_emissions_kgCO2e_per_t",
+    "total_energy_MJ_per_t",
+    "total_waste_kg_per_t"
+  ],
+  "categorical_choices": {
+    "mining_method": [
+      "open_pit",
+      "underground"
+    ],
+    "sorting_method": [
+      "manual",
+      "sensor_based"
+    ],
+    "concentration_method": [
+      "flotation",
+      "magnetic",
+      "gravity"
+    ],
+    "smelting_method": [
+      "blast_furnace",
+      "electric_arc",
+      "hydromet"
+    ],
+    "energy_source": [
+      "coal",
+      "gas",
+      "renewable",
+      "grid_mix"
+    ],
+    "product_type": [
+      "steel",
+      "aluminum",
+      "copper"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "created_at": "2025-09-09T19:43:56.802565+00:00Z",
+  "n_rows": 500,
+  "features": {
+    "categorical": [
+      "mining_method",
+      "sorting_method",
+      "concentration_method",
+      "smelting_method",
+      "energy_source",
+      "product_type"
+    ],
+    "numeric": [
+      "ore_grade",
+      "transport_km",
+      "manufacturing_efficiency",
+      "recycling_rate"
+    ]
+  },
+  "targets": [
+    "total_emissions_kgCO2e_per_t",
+    "total_energy_MJ_per_t",
+    "total_waste_kg_per_t"
+  ],
+  "estimator": "RandomForestRegressor (multi-output) inside Pipeline",
+  "notes": "Derived from legacy CSV schema by compatible trainer."
+}
